@@ -119,7 +119,7 @@
                 <br/><br/>
                 <b>Email: </b> thearykheary@gmail.com
                 <br/><br/>
-                <b>Facebook: </b> @Sokuntheary Kheang
+                <b>Facebook: </b> @Sokuntheary
                 <br/><br/>
 
             </td>
