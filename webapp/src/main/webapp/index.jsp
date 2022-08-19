@@ -1,130 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>My Portfolio</title>
-    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit your profile</title>
 </head>
 
 <body>
-    <center>
-        <img width="96px" src="./assets/images/images.jpg" />
+    <form action="/my-backend/profile" method="POST">
+        <table width="100%" cellspacing="30px;">
+            <tr>
+                <td colspan="3" style="border: 1px solid black; background-color: grey;">
+                    <h2>Tell us about yourself</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4>Profile Information</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>Last Name</div>
+                    <input name="lastName" type="text" style="width: 100%;" />
 
-        <h3>Hello, I'm Theary!</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        </p>
-    </center>
-    <p style="text-align: right;">Theary, The Programmer!</p>
-    <hr/>
-    <table width="100%" cellspacing="0px" cellpadding="5px">
-        <tr>
-            <td width="30%">
-                <h3>EDUCATION</h3>
-                <h5>YOUR DEGREE/MAJORD</h5>
-                <p>
-                    University name
-                    <br/> 2018-2021
-                    <br/><br/>
-                    <h5>YOUR DEGREE/MAJORD</h5>
-                    School name
-                    <br/> 2013-2018
-                </p>
-                <hr />
-            </td>
-            <td rowspan="4" style="border-left: 1px solid black;">
-                <h3>PROFESSIONAL EXPERTISE</h3>
-                <h5>ENTER YOUR POSITION TITLE</h5>
-                Company Name / 2020 - Present
-                <br/><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    <td>
+                        <div>First Name</div>
+                        <input name="firstName" type="text" style="width: 100%;" />
+                    </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>Email</div>
+                    <input name="lastName" type="text" style="width: 100%;" />
+                </td>
+                <td>
+                    <div>Phone</div>
+                    <input name="firstName" type="text" style="width: 100%;" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <span>Gender</span>
+                    <input name="gender" type="radio" value="male" /> Male
+                    <input name="gender" type="radio" value="female" /> Female
+                </td>
+            </tr>
 
-                <ul style="list-style-type:square">
-                    <li>blah blah ...</li>
-                    <li>blah blah ...</li>
-                    <li>blah blah ...</li>
-                    <li>blah blah ...</li>
-                    <li>blah blah ...</li>
-                    <li>blah blah ...</li>
-                </ul>
+            <tr>
+                <td colspan="3">
+                    <h4>Current Address</h4>
+                    <select name="city">
+            <option value="" disabled selected>Province/City</option>
+            <option value="Phnom Penh">Phnom Penh</option>
+            <option value="Kampong Cham">Kampong Cham</option>
+            <option value="Preyveng">Preyveng</option>
+          </select>
+                    <select name="Country">
+            <option value="" disabled selected>Country</option>
+            <option value="Cambodia">Cambodia</option>
+            <option value="Thailand">Thailand</option>
+            <option value="England">England</option>
+          </select>
+                    <select name="Post Code">
+            <option value="" disabled selected>Post Code</option>
+            <option value="+884">884</option>
+            <option value="+885">885</option>
+            <option value="+011">011</option>
+          </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <h4>Address</h4>
+                    <textarea name="address" rows="5" cols="80"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Skills</h4>
+                    <input name="skills" type="checkbox" value="designing" /> Designing
+                    <input name="skills" type="checkbox" value="coding" /> Coding
+                    <input name="skills" type="checkbox" value="Database Management" /> Database Management
+                    <input name="skills" type="checkbox" value="Debug " /> Debug
 
-                <h5>ENTER YOUR POSITION TITLE</h5>
-                Company Name / 2015 - 2020
-                <br/><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </td>
+                <td>
+                    <h4>Languages</h4>
+                    <input name="skills" type="checkbox" value="English" /> English
+                    <input name="skills" type="checkbox" value="French" /> French
+                    <input name="skills" type="checkbox" value="Chinese" /> Chinese
+                    <input name="skills" type="checkbox" value="Khmar" /> Khmar
 
-                <ul style="list-style-type:square">
-                    <li>blah blah ...</li>
-                    <li>blah blah ...</li>
-                    <li>blah blah ...</li>
-                    <li>blah blah ...</li>
-                    <li>blah blah ...</li>
-                    <li>blah blah ...</li>
-                </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Experience</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>From</div>
+                    <input name="from" type="text" style="width: 100%;" />
+                    <input name="from" type="text" style="width: 100% ;" />
+                    <input name="from" type="text" style="width: 100%;" />
+                    <input name="from" type="text" style="width: 100%;" />
+                </td>
+                <td>
+                    <div>To</div>
+                    <input name="to" type="text" style="width: 100%;" />
+                    <input name="to" type="text" style="width: 100%;" />
+                    <input name="to" type="text" style="width: 100%;" />
+                    <input name="to" type="text" style="width: 100%;" />
+                </td>
+                <td>
+                    <div>Description</div>
+                    <input name="description" type="text" style="width: 100%;" />
+                    <input name="description" type="text" style="width: 100%;" />
+                    <input name="description" type="text" style="width: 100%;" />
+                    <input name="description" type="text" style="width: 100%;" />
+                </td>
+            </tr>
 
-                <h5>ENTER YOUR POSITION TITLE</h5>
-                Company Name / 2012 - 2015
-                <br/><br/> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            <tr>
+                <td colspan="3">
+                    <h4>Choose your profile photo</h4>
+                    <input name="profile" type="file" />
+                </td>
+            </tr>
+        </table>
+        <div style="text-align: center;">
+            <button type="submit" style="background: blue; color: white;">Submit</button>
+        </div>
 
-                <ul style="list-style-type:square">
-                    <li>blah blah ...</li>
-                    <li>blah blah ...</li>
-                    <li>blah blah ...</li>
-                    <li>blah blah ...</li>
-                    <li>blah blah ...</li>
-                    <li>blah blah ...</li>
-
-                </ul>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h3>EXPERTISE</h3>
-                <h5>PROGRAMMING LANGUAGE</h5>
-                <p>
-                    Wev deverlopment (HTML, CSS, Javascrit), Python, PHP, Java, C++
-                    <br/><br/>
-                </p>
-                <h5>DESIGN</h5>
-                <p>
-                    Adobe, XD, Photo Shop
-                </p>
-                <h5>MICROSOFT OFFICE</h5>
-                <p>
-                    Ms Word, Ms Excel, Ms power Point, Ms Access
-                </p>
-
-                <hr />
-            </td>
-
-        </tr>
-        <tr>
-            <td>
-                <h3>HOBBY</h3>
-                <b>Reading: </b> Novel,Science News
-                <br/><br/>
-                <b>Sport: </b> Swimming, Tennis, Basket Ball
-                <br/><br/>
-                <b>Travel: </b> Mountain Area, Greenary field
-                <hr />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <h3>CONTACT</h3>
-                <b>Phone: </b> 012345678
-                <br/><br/>
-                <b>Email: </b> thearykheary@gmail.com
-                <br/><br/>
-                <b>Facebook: </b> @Sokuntheary
-                <br/><br/>
-
-            </td>
-        </tr>
-    </table>
+    </form>
 </body>
-
-</html>
