@@ -13,7 +13,7 @@
         <table width="100%" cellspacing="30px;">
             <tr>
                 <td colspan="3" style="border: 1px solid black; background-color: grey;">
-                    <h2>Tell us about yourself</h2>
+                    <h2>Tell us</h2>
                 </td>
             </tr>
             <tr>
