@@ -18,7 +18,7 @@
             </tr>
             <tr>
                 <td colspan="3">
-                    <h4>Profile Information</h4>
+                    <h4>Profile In</h4>
                 </td>
             </tr>
             <tr>
